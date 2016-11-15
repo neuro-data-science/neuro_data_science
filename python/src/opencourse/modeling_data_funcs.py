@@ -1,12 +1,12 @@
 import numpy as np
 
 
-def evaluateScoreCosExp(paras, spikes, angle):
-    predictedF = np.exp(paras[0] + paras[1] * np.cos(angle - paras[2]))
+def evaluate_score_ExpCos(params, spikes, angle):
+    predictedF = np.exp(params[0] + params[1] * np.cos(angle - params[2]))
     logP = spikes * np.log(predictedF) - predictedF
     spikes_factorial = np.array([np.math.factorial(ii) for ii in spikes])
     logP -= np.log(spikes_factorial)
-    score = -1 * np.sum(logP)
+    score = -1. * np.sum(logP)
     return score
 
 def format_plot(ax, y_max=6):
