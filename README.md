@@ -24,11 +24,25 @@ Below is a list of topics currently covered by this course.
 These tutorials cover the basics of data storage, representation, and manipulation.
 
 * Exploring data
+  * Goal: create all standard "initial plots" that one might make given this data
+  - [x] Data munging - conditions, trials, time, observables
+  - [x] Trial timeseries - raster plots
+  - [x] Trial averaging - peristimulus time histogram (psth)
+    - [x] Temporal smoothing
+  - [ ] Inter-spike intervals
 * Calculating statistics and uncertainty
 
 ## Modeling
 These tutorials attempt to answer specific questions about the brain by building computational models.
 
+* Models for anatomical (single unit) response during task
+  * Goal: create average response models (nonparametric and parametric) and quantify uncertainty in model
+  - [x] Raw response versus task variable
+  - [x] Average response versus task variable
+  - [x] Parametric response fitting
+  - [x] Bootstrapping errorbars for response
+  - [ ] MSE on held-out data
+  - [x] Machine learning response functions
 * Connectivity
 * Latent variables and dimensionality reduction
 * Linear models for timeseries
